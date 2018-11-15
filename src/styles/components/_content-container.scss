@@ -1,0 +1,18 @@
+.content-container
+{
+    max-width: 80%;
+    margin:0 auto;
+    padding: $m-size 0;
+}
+.flex-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        border: none;
+        background: none;
+        color: white;
+        font-size: 20px;
+    }
+}

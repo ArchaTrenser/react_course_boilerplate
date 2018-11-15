@@ -1,0 +1,78 @@
+.show-for-mobile
+{
+    @media (min-width:$desktop-breakpoint) {
+        display: none;
+    }
+}
+.show-for-desktop
+{
+    @media (max-width:$desktop-breakpoint - 0.1rem) {
+        display: none;
+    }
+}
+.list-header
+{
+    background: $off-white;
+    padding: $s-size $m-size;
+    color:$dark-blue;
+    border:1px solid darken($off-white, 7%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.list-body
+{
+    margin-bottom: $m-size;
+    @media (min-width:$desktop-breakpoint) {
+        margin-bottom:$l-size;
+    }
+}
+.list-item
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+    border: 1px solid darken($off-white, 7%);
+    border-top: none;
+    color: $dark-blue;
+    padding: $s-size $m-size;
+    transition: background 0.7s ease;
+    &:hover
+    {
+        background: #d1cece;
+    }
+    @media (min-width:$desktop-breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}
+.list-item__title
+{
+    word-break: break-all; 
+}
+.list-item__date
+{
+    font-size: 15px;
+    font-weight: normal;
+    color: $grey;
+}
+.list-item__amount
+{
+    margin: $s-size 0 0 0;
+
+    @media (min-width:$desktop-breakpoint) {
+        margin: 0;
+        padding-left: $s-size;
+    }
+}
+.list-item--message
+{
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    &:hover
+    {
+        background: none;
+    }
+}
