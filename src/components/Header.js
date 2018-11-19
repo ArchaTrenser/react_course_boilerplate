@@ -8,7 +8,7 @@ export const Header = ({startLogOut}) => (
     <div className="content-container">
       <div className="flex-container">
         <Link to="/dashboard" activeClassName="is-active"  className="header__title">
-           <h1>BoilerPlate</h1>
+           <h1>My Blog</h1>
         </Link>
         <button onClick = {startLogOut}>LOGOUT</button>
       </div>
